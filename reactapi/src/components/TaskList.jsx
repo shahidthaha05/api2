@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from 'axios'
+import Add from "./Add"
 
 
 function TaskList(){
@@ -46,7 +47,7 @@ function TaskList(){
             ))}
             </tbody>
         </table>
-        {editing ? <EditForm curTask={editDtls} updatetask={Updatedtls}/>:null}
+        {editing ? <EditForm curTask={editDtls} updatetask={Updatedtls}/>:< Add/>}
         </div>
         </>
     )
